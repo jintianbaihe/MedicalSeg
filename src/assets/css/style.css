@@ -1,0 +1,160 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none !important;
+}
+:root {
+  --aside-width: 240px;
+  --header-height: 60px;
+  --next-color-white: #ffffff;
+  --next-bg-main-color: #f8f8f8;
+  --next-bg-color: #f5f5ff;
+  --next-border-color-light: #f1f2f3;
+  --next-color-primary-lighter: #ecf5ff;
+  --next-color-success-lighter: #f0f9eb;
+  --next-color-warning-lighter: #fdf6ec;
+  --next-color-danger-lighter: #fef0f0;
+  --next-color-dark-hover: #0000001a;
+  --next-color-menu-hover: rgba(0, 0, 0, 0.2);
+  --next-color-user-hover: rgba(0, 0, 0, 0.04);
+  --next-color-seting-main: #e9eef3;
+  --next-color-seting-aside: #d3dce6;
+  --next-color-seting-header: #b3c0d1;
+}
+html,
+body,
+#app {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  font-family: Helvetica Neue, Helvetica, PingFang SC, Hiragino Sans GB,
+    Microsoft YaHei, SimSun, sans-serif;
+  font-weight: 400;
+  -webkit-font-smoothing: antialiased;
+  -webkit-tap-highlight-color: transparent;
+  background-color: var(--next-bg-main-color);
+  font-size: 14px;
+  position: relative;
+}
+.flex {
+  display: flex;
+}
+.flex-auto {
+  flex: 1;
+}
+.flex-center {
+  @extend .flex;
+  flex-direction: column;
+  width: 100%;
+}
+.flex-margin {
+  margin: auto;
+}
+.flex-warp {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  margin: 0 -5px;
+}
+.flex-middle {
+  @extend .flex;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  justify-items: center;
+}
+.v-color-picker__preview:not(.v-color-picker__preview--hide-alpha)
+  .v-color-picker__hue {
+  background: linear-gradient(
+    90deg,
+    red 0,
+    #ff0 16.66%,
+    #0f0 33.33%,
+    #0ff 50%,
+    #00f 66.66%,
+    #f0f 83.33%,
+    red
+  );
+}
+.tool-btn.toolBtnSelected {
+  background-color: #9fa8da;
+}
+.tool-btn {
+  background-color: #e8eaf6;
+}
+.v-label {
+  font-size: 14px !important;
+}
+.v-expansion-panel-content__wrap {
+  padding: 0 10px 0 0 !important;
+}
+.v-slider--vertical {
+  height: 100% !important;
+}
+.ace-eclipse .ace_gutter,
+.ace-eclipse .ace_gutter-active-line {
+  background-color: #e8eaf6 !important;
+}
+.v-select.v-input--dense .v-select__selection--comma {
+  font-size: 14px !important;
+}
+.page {
+  display: flex;
+  justify-content: center;
+}
+.el-button--primary {
+  background-color: #5c6bc0 !important;
+  border-color: #3f51b5 !important;
+}
+.first-step-popover-class {
+  position: fixed !important;
+}
+div#driver-highlighted-element-stage,
+div#driver-page-overlay {
+  background: transparent !important;
+  outline: 5000px solid rgba(0, 0, 0, 0.75) !important;
+}
+
+button.driver-close-btn {
+  background: #e8eaf6!important;
+  color: #303f9f!important;
+  text-shadow: none!important;
+}
+
+button.driver-prev-btn {
+  background: #e8eaf6!important;
+  color: #303f9f!important;
+  text-shadow: none!important;
+}
+button.driver-next-btn {
+  background: #5c6bc0!important;
+  color: #fff!important;
+  text-shadow: none!important;
+
+}
+
+div.driver-popover-title{
+  font-size: 16px!important;
+}
+
+div#driver-popover-item::before {
+  position: absolute;
+  top: -36px;
+  right: 0;
+  width: 98px;
+  height: 90px;
+  background: url('@/assets/tip.png') no-repeat;
+  background-size: 98px 90px;
+  content: '';
+}
+
+.switchbox .v-input__control {
+  flex-direction: initial!important;
+  flex-wrap: initial!important;
+}
+
+.switchbox .v-input__slot {
+  margin-bottom: 0!important;
+}
